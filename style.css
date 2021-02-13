@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body{
+    min-height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+}
+
+body{
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 1200px;
+}
+
+#svg{
+    min-height: 600px;
+    min-width: 960px;
+    margin: auto;
+}
+
+#tooltip{
+    width: 200px;
+    font-size: 13px;
+    height: auto;
+    border-radius: 5px;
+    padding: 9px;
+    background-color: cornsilk;
+    position: absolute;
+}
+svg#legend-id{
+    margin: 20px;
+    float: right;
+}
+#svg{
+    position: relative;
+}
+#legend{
+    position: absolute;
+    left: -35px;
+    top: 40px;
+    width: 200px;
+    height: 500px;
+}
+
+@media all and (max-width: 1300px){
+    #legend{
+        font-size: .5rem;
+    }
+    .legend-item{
+        width: 15px;
+        height: 15px;
+    }
+}
